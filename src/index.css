@@ -1,6 +1,11 @@
 body {
 	margin: 0;
 	padding: 0;
+	background-color: rgb(247, 247, 247);
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
 
 #overlay {

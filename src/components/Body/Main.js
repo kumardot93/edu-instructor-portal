@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import styles from './css/Main.module.css';
 import Sidebar from './Sidebar.js';
-import Courses from './Courses';
-import Blogs from './Blogs.js';
-import Tests from './Tests.js';
+import Board from './Board.js';
 
 import { connect } from 'react-redux';
 import { updateMaterial } from './../../redux/actions/Material.js';
@@ -21,9 +19,7 @@ class Main extends Component {
 		return (
 			<div id={styles.main}>
 				<div className="d-flex p-2 align-items-center justify-content" id={styles.cont}>
-					<Courses />
-					<Tests />
-					<Blogs />
+					<Board />
 					<Sidebar />
 				</div>
 			</div>
