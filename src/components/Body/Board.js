@@ -79,7 +79,7 @@ class Board extends Component {
 						Create New Test
 						<button className={[ 'material-icons p-0 float-right', styles.btns ].join(' ')}>add</button>
 					</p>
-					<p className={styles.pBtns}>
+					<p className={styles.pBtns} onClick={() => window.open('test/', '_self')}>
 						View Tests
 						<button className={[ 'material-icons p-0 float-right', styles.btns ].join(' ')}>launch</button>
 					</p>
