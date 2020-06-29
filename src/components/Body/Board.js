@@ -103,7 +103,7 @@ class Board extends Component {
 						Create New Series
 						<button className={[ 'material-icons p-0 float-right', styles.btns ].join(' ')}>add</button>
 					</p>
-					<p className={styles.pBtns}>
+					<p className={styles.pBtns} onClick={() => window.open('test-series/', '_self')}>
 						View Tests Series
 						<button className={[ 'material-icons p-0 float-right', styles.btns ].join(' ')}>launch</button>
 					</p>
