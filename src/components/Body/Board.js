@@ -30,7 +30,7 @@ class Board extends Component {
 				title="New Test Series"
 				url={window.base + '/material/api/newTestSeries/'}
 				// success_url={window.base + '/material/create-test/'}
-				success_url="#"
+				success_url={window.base + '/material/create-test-series/'}
 			/>,
 			el
 		);
