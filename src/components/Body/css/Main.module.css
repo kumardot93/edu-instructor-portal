@@ -11,10 +11,6 @@
 	overflow-x: hidden;
 }
 
-#cont {
-	flex-direction: row;
-}
-
 .heading {
 	border-radius: 3px;
 }
@@ -38,8 +34,5 @@
 @media only screen and (max-width: 850px) {
 	.boxes {
 		width: 85%;
-	}
-	#cont {
-		flex-direction: column;
 	}
 }

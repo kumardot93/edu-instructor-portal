@@ -34,23 +34,24 @@ p {
 
 #unmount {
 	position: absolute;
-	left: 10vw;
+	left: 20vw;
 	top: 10vh;
-	width: 80vw;
+	width: 60vw;
 	height: 80vh;
 	max-height: 110vw;
 	z-index: 2;
 	overflow: auto;
 	padding: 2vw;
 	animation-name: anim2;
-	animation-duration: 0.4s;
+	animation-duration: 0.45s;
 }
 
 @keyframes anim2 {
 	from {
+		opacity: 1;
 	}
 	to {
-		opacity: 0;
+		opacity: 0.25;
 		height: 0;
 		top: -10vh;
 	}

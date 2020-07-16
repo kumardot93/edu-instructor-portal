@@ -9,7 +9,7 @@ import { updateMaterial } from './../../redux/actions/Material.js';
 class Main extends Component {
 	//Fetching Dashboard data
 	componentDidMount = () => {
-		fetch(window.base + '/material/api/instructor-dashboard-data/', { credentials: window.cred })
+		fetch(window.base + '/home/api/instructor-dashboard-data/', { credentials: window.cred })
 			.then((response) => response.json())
 			.then((data) => this.props.updateMaterial(data))
 			.catch((error) => alert(error));
@@ -17,11 +17,9 @@ class Main extends Component {
 
 	render() {
 		return (
-			<div id={styles.main}>
-				<div className="d-flex p-2 align-items-center justify-content" id={styles.cont}>
-					<Board />
-					<Sidebar />
-				</div>
+			<div className="d-flex flex-column p-2 align-items-stretch justify-content" id={styles.main}>
+				<Board />
+				<Sidebar />
 			</div>
 		);
 	}

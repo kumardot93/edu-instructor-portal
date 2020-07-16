@@ -7,7 +7,7 @@ var CloseOverlay = (event, elid) => {
 
 	//appliying animation by changing styles id of the element
 	document.getElementById(elid).id = styles.unmount;
-	setTimeout(unmount, 350); //timeout function, callback called after animation
+	setTimeout(unmount, 400); //timeout function, callback called after animation
 };
 
 //funtion to unmount any component in overlay div

@@ -4,10 +4,17 @@
 
 .boxes {
 	box-shadow: 1px 1px 2px black;
-	width: calc(100% / 3 - 25px);
-	height: calc(100% / 2 - 20px);
+	width: calc(100% / 3 - 16px);
 }
 
+.heading {
+	white-space: nowrap;
+}
+.desc {
+	position: relative;
+	font-size: small;
+	margin-top: -10px;
+}
 .pBtns {
 	cursor: pointer;
 	transition: 0.2s;
@@ -36,5 +43,8 @@
 	.boxes {
 		width: 100%;
 		height: auto;
+	}
+	.heading {
+		font-size: 10.5vw;
 	}
 }
