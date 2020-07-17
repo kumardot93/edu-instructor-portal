@@ -7,7 +7,7 @@ const Material = (state = { tests: [] }, action) => {
 		case 'deleteTest':
 			state.tests.splice(action.payload, 1);
 			state.tests = [ ...state.tests ];
-			console.log('state adter delete ', state.tests);
+
 			break;
 		default:
 			break;

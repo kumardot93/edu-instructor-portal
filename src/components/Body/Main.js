@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './css/Main.module.css';
-import Sidebar from './Sidebar.js';
+import Utilities from './Utilities.js';
 import Board from './Board.js';
 
 import { connect } from 'react-redux';
@@ -19,7 +19,7 @@ class Main extends Component {
 		return (
 			<div className="d-flex flex-column p-2 align-items-stretch justify-content" id={styles.main}>
 				<Board />
-				<Sidebar />
+				<Utilities />
 			</div>
 		);
 	}

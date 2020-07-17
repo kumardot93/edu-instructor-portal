@@ -36,7 +36,6 @@ class Board extends Component {
 		);
 	};
 	render() {
-		console.log(this.props.material);
 		return (
 			<div className="d-flex align-items-stretch flex-wrap align-self-stretch m-2 mb-3 p-1" id={styles.board}>
 				<div className={[ 'm-1 ml-2 mr-2 bg-white p-4', styles.boxes ].join(' ')} style={{ opacity: '0.45' }}>

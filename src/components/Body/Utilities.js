@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './css/Sidebar.module.css';
-function Sidebar(props) {
+function Utilities(props) {
+	//Provides bunch of utility routs not implemented at the moment
 	return (
 		<div
 			className={[ 'bg-light ml-auto m-2 mb-4 d-flex flex-row', styles.sidebar ].join(' ')}
@@ -22,4 +23,4 @@ function Sidebar(props) {
 	);
 }
 
-export default Sidebar;
+export default Utilities;
