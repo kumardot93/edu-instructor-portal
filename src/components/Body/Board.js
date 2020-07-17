@@ -62,7 +62,7 @@ class Board extends Component {
 				</div>
 				<div className={[ 'm-1 ml-2 mr-2 bg-white p-4', styles.boxes ].join(' ')} style={{ opacity: '0.45' }}>
 					<p className={[ 'display-4 d-flex flex-row', styles.heading ].join(' ')}>
-						Courses
+						Course
 						<span className="ml-auto mr-2">{this.props.material.courses}</span>
 					</p>
 					<p className={styles.desc}>Comming Soon...</p>
@@ -85,7 +85,7 @@ class Board extends Component {
 
 				<div className={[ 'm-1 ml-2 mr-2 bg-white p-4', styles.boxes ].join(' ')}>
 					<p className={[ 'display-4 d-flex flex-row', styles.heading ].join(' ')}>
-						Tests
+						Test
 						<span className="ml-auto mr-2 text-primary">{this.props.material.tests}</span>
 					</p>
 					<p className={styles.desc + ' text-secondary'}>
@@ -139,7 +139,7 @@ class Board extends Component {
 
 				<div className={[ 'm-1 ml-2 mr-2 bg-white p-4', styles.boxes ].join(' ')} style={{ opacity: '0.3' }}>
 					<p className={[ 'display-4 d-flex flex-row', styles.heading ].join(' ')}>
-						Blogs
+						Blog
 						<span className="ml-auto mr-2">{this.props.material.courses}</span>
 					</p>
 					<p className={styles.desc}>Comming Soon...</p>
@@ -162,7 +162,7 @@ class Board extends Component {
 
 				<div className={[ 'm-1 ml-2 mr-2 bg-white p-4', styles.boxes ].join(' ')} style={{ opacity: '0.3' }}>
 					<p className={[ 'display-4 d-flex flex-row', styles.heading ].join(' ')}>
-						Events
+						Event
 						<span className="ml-auto mr-2">{this.props.material.courses}</span>
 					</p>
 					<p className={styles.desc}>Comming Soon...</p>
