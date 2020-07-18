@@ -15,11 +15,11 @@ class OverlayForm extends Component {
 	}
 
 	componentDidMount = () => {
-		fetch(this.props.url, { credentials: window.cred }) //fetching form data from backend
+		fetch(this.props.url, { credentials: window.cred }) //fetching just to ensure csrf token is set in cookie
 			.then((response) => response.text())
 			.then((data) => {
 				this.setState((state, props) => {
-					return { spinner: '' }; //storing response to this.state.form_data
+					return { spinner: '' }; //removing spinner 
 				});
 			})
 			.catch((error) => alert(error));
@@ -42,7 +42,7 @@ class OverlayForm extends Component {
 					//Extracting pk from the success response
 					let pk = parseInt(data.toLowerCase().substring(8));
 					setTimeout(() => {
-						window.open(this.props.success_url + pk, '_blank'); //Opens a new window to adust the new created wlwmwnt
+						window.open(this.props.success_url + pk, '_blank'); //Opens a new window to adust the new created element
 						window.location.reload();
 					}, 2500);
 					this.setState((state, props) => {
@@ -51,7 +51,6 @@ class OverlayForm extends Component {
 							btnSpinner: ''
 						};
 					});
-					// this.props.updateBoard();
 				} else {
 					//else show errors received from backend
 					this.setState((state, props) => {
