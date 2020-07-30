@@ -3,7 +3,8 @@
 	width: 100%;
 	min-width: 80px;
 	border-radius: 6px;
-	box-shadow: 0 0 6px black;
+	box-shadow: 0 0 6px var(--primary-shadow-color, black);
+	background-color: var(--primary-bgColor, white);
 	overflow-y: hidden;
 	overflow-x: auto;
 }

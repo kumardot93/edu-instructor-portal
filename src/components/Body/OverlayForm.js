@@ -19,7 +19,7 @@ class OverlayForm extends Component {
 			.then((response) => response.text())
 			.then((data) => {
 				this.setState((state, props) => {
-					return { spinner: '' }; //removing spinner 
+					return { spinner: '' }; //removing spinner
 				});
 			})
 			.catch((error) => alert(error));
@@ -66,7 +66,7 @@ class OverlayForm extends Component {
 
 	render() {
 		return (
-			<div className="container bg-light" id={styles.overlaymain}>
+			<div className="container" id={styles.overlaymain}>
 				<button id={styles.cross} onClick={(event) => CloseOverlay(event, styles.overlaymain)}>
 					<i className="material-icons">cancel</i>
 				</button>
@@ -94,7 +94,7 @@ class OverlayForm extends Component {
 								<label className="mt-2">Description:</label>
 								<textarea className="form-control" rows="7" name="description" required />
 							</fieldset>
-							<p className="m-2">You can always edit these fields later</p>
+							<p className="m-2 text-secondary">You can always edit these fields later</p>
 							{this.state.success === 0 ? (
 								<button
 									className="btn btn-primary"

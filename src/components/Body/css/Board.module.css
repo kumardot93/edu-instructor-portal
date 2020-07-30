@@ -1,9 +1,11 @@
 #board {
-	box-shadow: 1px 1px 4px black;
+	box-shadow: 1px 1px 4px var(--primary-shadow-color, black);
 }
 
 .boxes {
-	box-shadow: 1px 1px 2px black;
+	background-color: var(--primary-bgColor, white);
+	color: var(--primary-color, black);
+	box-shadow: 1px 1px 3px var(--primary-shadow-color, black);
 	width: calc(100% / 3 - 16px);
 }
 
@@ -21,7 +23,7 @@
 }
 
 .pBtns:hover {
-	color: green;
+	color: var(--green-color, green);
 }
 
 .btns {

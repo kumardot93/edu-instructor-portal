@@ -22,7 +22,7 @@ function UserBtn(props) {
 			<div
 				onClick={(ev) => setTimeout(changeVis, 15, 'block')} //Don't let dropdown disapear
 				id={styles.userPannel}
-				className="p-2 pr-3 bg-white"
+				className="p-2 pr-3"
 				style={{ display: userPannelVis }}
 			>
 				{props.profile.name !== undefined ? ( //profile data: username and email of user
@@ -33,7 +33,7 @@ function UserBtn(props) {
 				) : (
 					''
 				)}
-				<hr className="m-0 mt-1" />
+				<hr className="m-0 mt-1 bg-secondary" />
 				<a //links profile and logout
 					href="#"
 					className={[ styles.navLink, styles.userPannelLink, 'pb-0 mt-2 mb-1 mr-2 ml-1' ].join(' ')}
@@ -43,7 +43,7 @@ function UserBtn(props) {
 				</a>
 				<a
 					href={window.base + '/user/logout/'}
-					className={[ styles.navLink, styles.userPannelLink, 'pb-0 mb-0 mr-2 ml-1' ].join(' ')}
+					className={[ styles.userPannelLink, 'pb-0 mb-0 mr-2 ml-1' ].join(' ')}
 				>
 					Logout
 				</a>

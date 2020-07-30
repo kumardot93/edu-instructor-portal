@@ -38,7 +38,7 @@ class Board extends Component {
 	render() {
 		return (
 			<div className="d-flex align-items-stretch flex-wrap align-self-stretch m-2 mb-3 p-1" id={styles.board}>
-				<div className={[ 'm-1 ml-2 mr-2 bg-white p-4', styles.boxes ].join(' ')} style={{ opacity: '0.45' }}>
+				<div className={[ 'm-1 ml-2 mr-2 p-4', styles.boxes ].join(' ')} style={{ opacity: '0.45' }}>
 					<p className={[ 'display-4 d-flex flex-row', styles.heading ].join(' ')}>
 						Class
 						<span className="mr-2 ml-auto">{this.props.material.courses}</span>
@@ -60,7 +60,7 @@ class Board extends Component {
 						</button>
 					</p>
 				</div>
-				<div className={[ 'm-1 ml-2 mr-2 bg-white p-4', styles.boxes ].join(' ')} style={{ opacity: '0.45' }}>
+				<div className={[ 'm-1 ml-2 mr-2 p-4', styles.boxes ].join(' ')} style={{ opacity: '0.45' }}>
 					<p className={[ 'display-4 d-flex flex-row', styles.heading ].join(' ')}>
 						Course
 						<span className="ml-auto mr-2">{this.props.material.courses}</span>
@@ -83,7 +83,7 @@ class Board extends Component {
 					</p>
 				</div>
 
-				<div className={[ 'm-1 ml-2 mr-2 bg-white p-4', styles.boxes ].join(' ')}>
+				<div className={[ 'm-1 ml-2 mr-2 p-4', styles.boxes ].join(' ')}>
 					<p className={[ 'display-4 d-flex flex-row', styles.heading ].join(' ')}>
 						Test
 						<span className="ml-auto mr-2 text-primary">{this.props.material.tests}</span>
@@ -111,12 +111,14 @@ class Board extends Component {
 					</p>
 				</div>
 
-				<div className={[ 'm-1 ml-2 mr-2 bg-white p-4', styles.boxes ].join(' ')}>
+				<div className={[ 'm-1 ml-2 mr-2 p-4', styles.boxes ].join(' ')}>
 					<p className={[ 'display-4 d-flex flex-row', styles.heading ].join(' ')}>
 						Test Series
 						<span className="ml-auto mr-2 text-primary">{this.props.material.testSeries}</span>
 					</p>
-					<p className={styles.desc}>A series of tests for better learning and evaluation</p>
+					<p className={styles.desc + ' text-secondary'}>
+						A series of tests for better learning and evaluation
+					</p>
 					<hr />
 					<p className={styles.pBtns} onClick={this.newTestSeries}>
 						Create New Series
@@ -137,7 +139,7 @@ class Board extends Component {
 					</p>
 				</div>
 
-				<div className={[ 'm-1 ml-2 mr-2 bg-white p-4', styles.boxes ].join(' ')} style={{ opacity: '0.3' }}>
+				<div className={[ 'm-1 ml-2 mr-2 p-4', styles.boxes ].join(' ')} style={{ opacity: '0.3' }}>
 					<p className={[ 'display-4 d-flex flex-row', styles.heading ].join(' ')}>
 						Blog
 						<span className="ml-auto mr-2">{this.props.material.courses}</span>
@@ -160,7 +162,7 @@ class Board extends Component {
 					</p>
 				</div>
 
-				<div className={[ 'm-1 ml-2 mr-2 bg-white p-4', styles.boxes ].join(' ')} style={{ opacity: '0.3' }}>
+				<div className={[ 'm-1 ml-2 mr-2 p-4', styles.boxes ].join(' ')} style={{ opacity: '0.3' }}>
 					<p className={[ 'display-4 d-flex flex-row', styles.heading ].join(' ')}>
 						Event
 						<span className="ml-auto mr-2">{this.props.material.courses}</span>
